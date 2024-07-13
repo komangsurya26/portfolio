@@ -61,7 +61,7 @@ const Skils = () => {
     let finalPosition = -width / 2 - 8;
 
     controls = animate(xTranslation, [0, finalPosition], {
-      duration: 25,
+      duration: 15,
       ease: "linear",
       repeat: Infinity,
       repeatType: "loop",
@@ -72,7 +72,7 @@ const Skils = () => {
   }, [xTranslation, width]);
 
   return (
-    <section>
+    <section className="overflow-hidden relative">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
@@ -83,7 +83,7 @@ const Skils = () => {
       >
         <motion.div
           ref={ref}
-          className="flex gap-16 left-0 absolute"
+          className="flex gap-16"
           style={{ x: xTranslation }}
         >
           {[...images, ...images].map((image, index) => (
