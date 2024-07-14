@@ -8,7 +8,7 @@ import { Download } from "lucide-react";
 
 export default function Home() {
   return (
-    <section className="min-h-screen pt-24 xl:pt-32">
+    <section className="min-h-screen pt-24">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
